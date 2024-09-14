@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>unreal</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/files/c31d3827db17a718d6e5e96006c420a5/logo_flag.png" type="image/x-icon">
+    <link rel="stylesheet" href="/themes/odin/static/css/fonts.min.css?d=f8379e09">
+    <link rel="stylesheet" href="/themes/odin/static/css/main.min.css?d=f8379e09">
+    <link rel="stylesheet" href="/themes/odin/static/css/core.min.css?d=f8379e09">
+    
+    
+
+    
+    <script type="text/javascript">
+        var init = {
+            'urlRoot': "",
+            'csrfNonce': "fee877cf2a15e512b9c901a845041682688124f848cf5754d952280169a5a86f",
+            'userMode': "teams",
+            'userId': 0,
+            'start': 1700850660,
+            'end': 1700936940,
+            'theme_settings': null
+        }
+    </script>
+    
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <div class="container">
+        <a href="/" class="navbar-brand">
+            
+                unreal
+            
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#base-navbars"
+                aria-controls="base-navbars" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="base-navbars">
+            <ul class="navbar-nav mr-auto">
+
+                
+                    <li class="nav-item">
+                        <a class="nav-link" href="/users">Users</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="/teams">Teams</a>
+                    </li>
+                    
+                
+
+                
+                    <li class="nav-item">
+                        <a class="nav-link" href="/scoreboard">Scoreboard</a>
+                    </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/challenges">Challenges</a>
+                </li>
+            </ul>
+
+            <hr class="d-sm-flex d-md-flex d-lg-none">
+
+            <ul class="navbar-nav ml-md-auto d-block d-sm-flex d-md-flex">
+                
+                    
+                        <li class="nav-item">
+                            <a class="nav-link" href="/register">
+                                <span class="d-block" data-toggle="tooltip" data-placement="bottom" title="Register">
+                                    <i class="fas fa-user-plus d-none d-md-block d-lg-none"></i>
+                                </span>
+                                <span class="d-sm-block d-md-none d-lg-block">
+                                    <i class="fas fa-user-plus pr-1"></i>Register
+                                </span>
+                            </a>
+                        </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="/login">
+                            <span class="d-block" data-toggle="tooltip" data-placement="bottom" title="Login">
+                                <i class="fas fa-sign-in-alt d-none d-md-block d-lg-none"></i>
+                            </span>
+                            <span class="d-sm-block d-md-none d-lg-block">
+                                <i class="fas fa-sign-in-alt pr-1"></i>Login
+                            </span>
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+</nav>
+
+    <main role="main">
+        
+	<div class="container">
+	<style>
+  .countdown-container {
+    display: none;
+  }
+  .links {
+    display: none;
+  }
+  .icon-link {
+    padding-top: 115px;
+    padding-right: 10px;
+    padding-bottom: 0px;
+    padding-left: 10px;
+  }
+</style>
+<script defer>
+  var end = new Date("2023-11-24T18:31:00Z").getTime();
+
+  var updateCounter = () => {
+    var now = new Date().getTime();
+    var distance = end - now;
+
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor(
+      (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+    );
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    let displayString =
+      days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+
+    var countdownContainer = document.querySelector(".countdown-container");
+    var links = document.querySelector(".links");
+    document.getElementById("timer").innerHTML = displayString;
+
+    if (distance < 0) {
+      document.getElementById("timer").innerHTML = "EXPIRED";
+      links.style.display = "block";
+    } else {
+      countdownContainer.style.display = "block";
+      links.style.display = "block";
+    }
+  };
+
+  document.addEventListener("DOMContentLoaded", () => {
+    updateCounter();
+    setInterval(updateCounter, 1000);
+  });
+</script>
+<div class="row">
+  <div class="col-md-6 offset-md-3">
+    <img
+      class="w-100 mx-auto d-block"
+      style="
+        max-width: 500px;
+        padding: 50px;
+        padding-top: 6vh;
+        padding-bottom: 5.5vh;
+      "
+      src="/themes/odin/static/img/logo.png?d=e06d7fc8"
+    />
+    <h1 class="display-4 text-center" style="padding: 20px">
+      The CTF has ended! Thank you for joining.
+    </h1>
+    <div class="countdown-container" style="padding-top: 0px">
+      <div class="jumbotron bg-transparent mb-0 radius-0 text-mono">
+        <h1 class="display-4" style="color: #bcc4cb">Starting in</h1>
+        <p
+          id="timer"
+          class="display-3"
+          style="color: #bcc4cb; font-size: 4.2rem"
+        ></p>
+      </div>
+    </div>
+    <h3 class="text-center links">
+      <a href="https://confluence.atlfest.com/discord">
+        <i class="fab fa-discord fa-2x icon-link" aria-hidden="true"></i>
+      </a>
+      &nbsp;
+      <a href="https://confluence.atlfest.com/brochure">
+        <i class="fa fa-info-circle fa-2x icon-link" aria-hidden="true"></i>
+      </a>
+      &nbsp;
+    </h3>
+  </div>
+</div>
+
+	</div>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container text-center">
+            <a href="https://ctfd.io" class="text-secondary">
+                <small class="text-muted">Powered by CTFd</small>
+            </a>
+        </div>
+    </footer>
+
+    <script defer src="/themes/odin/static/js/vendor.bundle.min.js?d=f8379e09"></script>
+    <script defer src="/themes/odin/static/js/core.min.js?d=f8379e09"></script>
+    <script defer src="/themes/odin/static/js/helpers.min.js?d=f8379e09"></script>
+
+    
+    <script defer src="/themes/odin/static/js/pages/main.min.js?d=f8379e09"></script>
+    
+
+    
+    
+
+    
+
+    
+</body>
+</html>

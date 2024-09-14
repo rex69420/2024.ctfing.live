@@ -1,0 +1,1 @@
+{"success": true, "data": [{"challenge_id": 3, "user": {"name": "xyz", "id": 78}, "date": "2023-11-24T19:19:52+00:00", "type": "correct", "team": {"name": "Genshin Impact", "id": 35}, "challenge": {"value": 50, "name": "bot", "category": "warmup", "id": 3}, "id": 318}]}

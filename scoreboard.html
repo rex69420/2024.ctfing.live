@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>unreal</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/files/c31d3827db17a718d6e5e96006c420a5/logo_flag.png" type="image/x-icon">
+    <link rel="stylesheet" href="/themes/odin/static/css/fonts.min.css?d=70993021">
+    <link rel="stylesheet" href="/themes/odin/static/css/main.min.css?d=70993021">
+    <link rel="stylesheet" href="/themes/odin/static/css/core.min.css?d=70993021">
+    
+    
+
+    
+    <script type="text/javascript">
+        var init = {
+            'urlRoot': "",
+            'csrfNonce': "fee877cf2a15e512b9c901a845041682688124f848cf5754d952280169a5a86f",
+            'userMode': "teams",
+            'userId': 0,
+            'start': 1700850660,
+            'end': 1700936940,
+            'theme_settings': null
+        }
+    </script>
+    
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <div class="container">
+        <a href="/" class="navbar-brand">
+            
+                unreal
+            
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#base-navbars"
+                aria-controls="base-navbars" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="base-navbars">
+            <ul class="navbar-nav mr-auto">
+
+                
+                    <li class="nav-item">
+                        <a class="nav-link" href="/users">Users</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="/teams">Teams</a>
+                    </li>
+                    
+                
+
+                
+                    <li class="nav-item">
+                        <a class="nav-link" href="/scoreboard">Scoreboard</a>
+                    </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/challenges">Challenges</a>
+                </li>
+            </ul>
+
+            <hr class="d-sm-flex d-md-flex d-lg-none">
+
+            <ul class="navbar-nav ml-md-auto d-block d-sm-flex d-md-flex">
+                
+                    
+                        <li class="nav-item">
+                            <a class="nav-link" href="/register">
+                                <span class="d-block" data-toggle="tooltip" data-placement="bottom" title="Register">
+                                    <i class="fas fa-user-plus d-none d-md-block d-lg-none"></i>
+                                </span>
+                                <span class="d-sm-block d-md-none d-lg-block">
+                                    <i class="fas fa-user-plus pr-1"></i>Register
+                                </span>
+                            </a>
+                        </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="/login">
+                            <span class="d-block" data-toggle="tooltip" data-placement="bottom" title="Login">
+                                <i class="fas fa-sign-in-alt d-none d-md-block d-lg-none"></i>
+                            </span>
+                            <span class="d-sm-block d-md-none d-lg-block">
+                                <i class="fas fa-sign-in-alt pr-1"></i>Login
+                            </span>
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+</nav>
+
+    <main role="main">
+        
+<div class="jumbotron">
+	<div class="container">
+		<h1>Scoreboard</h1>
+	</div>
+</div>
+<div class="container">
+	<div>
+
+
+</div>
+
+	<div id="score-graph" class="row d-flex align-items-center">
+		<div class="col-md-12 text-center">
+			<i class="fas fa-circle-notch fa-spin fa-3x fa-fw spinner"></i>
+		</div>
+	</div>
+
+	
+	
+	<div id="scoreboard" class="row">
+		<div class="col-md-12">
+			<table class="table table-striped">
+				<thead>
+					<tr>
+						<td scope="col" width="10px"><b>Place</b></td>
+						<td scope="col"><b>Team</b></td>
+						<td scope="col"><b>Score</b></td>
+					</tr>
+				</thead>
+				<tbody>
+				
+					<tr>
+						<th scope="row" class="text-center">1</th>
+						<td>
+							<a href="/teams/4">
+								TechSyndicate
+
+								
+							</a>
+						</td>
+						<td>5350</td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="text-center">2</th>
+						<td>
+							<a href="/teams/15">
+								OPG World School
+
+								
+							</a>
+						</td>
+						<td>5100</td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="text-center">3</th>
+						<td>
+							<a href="/teams/19">
+								Exun
+
+								
+							</a>
+						</td>
+						<td>4850</td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="text-center">4</th>
+						<td>
+							<a href="/teams/9">
+								nCrypt
+
+								
+							</a>
+						</td>
+						<td>4850</td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="text-center">5</th>
+						<td>
+							<a href="/teams/20">
+								Amity International School, PV
+
+								
+							</a>
+						</td>
+						<td>3100</td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="text-center">6</th>
+						<td>
+							<a href="/teams/17">
+								Shadow
+
+								
+							</a>
+						</td>
+						<td>2700</td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="text-center">7</th>
+						<td>
+							<a href="/teams/11">
+								eSpice
+
+								
+							</a>
+						</td>
+						<td>2500</td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="text-center">8</th>
+						<td>
+							<a href="/teams/10">
+								Amity International School, Noida
+
+								
+							</a>
+						</td>
+						<td>1950</td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="text-center">9</th>
+						<td>
+							<a href="/teams/5">
+								Seth Anandram Jaipuria School
+
+								
+							</a>
+						</td>
+						<td>1850</td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="text-center">10</th>
+						<td>
+							<a href="/teams/21">
+								encrypters
+
+								
+							</a>
+						</td>
+						<td>1800</td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="text-center">11</th>
+						<td>
+							<a href="/teams/6">
+								velvet_thunder
+
+								
+							</a>
+						</td>
+						<td>1750</td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="text-center">12</th>
+						<td>
+							<a href="/teams/16">
+								Cambridge School Noida
+
+								
+							</a>
+						</td>
+						<td>1300</td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="text-center">13</th>
+						<td>
+							<a href="/teams/14">
+								Presidium Indirapuram
+
+								
+							</a>
+						</td>
+						<td>1150</td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="text-center">14</th>
+						<td>
+							<a href="/teams/39">
+								LallanTaap Warriors
+
+								
+							</a>
+						</td>
+						<td>1000</td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="text-center">15</th>
+						<td>
+							<a href="/teams/42">
+								okay
+
+								
+							</a>
+						</td>
+						<td>1000</td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="text-center">16</th>
+						<td>
+							<a href="/teams/12">
+								Navy Children School
+
+								
+							</a>
+						</td>
+						<td>800</td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="text-center">17</th>
+						<td>
+							<a href="/teams/3">
+								Adarsh Public School
+
+								
+							</a>
+						</td>
+						<td>500</td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="text-center">18</th>
+						<td>
+							<a href="/teams/13">
+								Amity International School, G43
+
+								
+							</a>
+						</td>
+						<td>350</td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="text-center">19</th>
+						<td>
+							<a href="/teams/7">
+								BJPS
+
+								
+							</a>
+						</td>
+						<td>300</td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="text-center">20</th>
+						<td>
+							<a href="/teams/36">
+								iamherexD
+
+								
+							</a>
+						</td>
+						<td>250</td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="text-center">21</th>
+						<td>
+							<a href="/teams/8">
+								d_crypter
+
+								
+							</a>
+						</td>
+						<td>250</td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="text-center">22</th>
+						<td>
+							<a href="/teams/40">
+								yourdadddyyyy
+
+								
+							</a>
+						</td>
+						<td>250</td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="text-center">23</th>
+						<td>
+							<a href="/teams/35">
+								Genshin Impact
+
+								
+							</a>
+						</td>
+						<td>50</td>
+					</tr>
+				
+				</tbody>
+			</table>
+		</div>
+	</div>
+	
+	
+</div>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container text-center">
+            <a href="https://ctfd.io" class="text-secondary">
+                <small class="text-muted">Powered by CTFd</small>
+            </a>
+        </div>
+    </footer>
+
+    <script defer src="/themes/odin/static/js/vendor.bundle.min.js?d=70993021"></script>
+    <script defer src="/themes/odin/static/js/core.min.js?d=70993021"></script>
+    <script defer src="/themes/odin/static/js/helpers.min.js?d=70993021"></script>
+
+    
+	<script defer src="/themes/odin/static/js/pages/scoreboard.min.js?d=70993021"></script>
+
+
+    
+	<script defer src="/themes/odin/static/js/echarts.bundle.min.js?d=70993021"></script>
+
+
+    
+
+    
+</body>
+</html>

@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>unreal</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/files/c31d3827db17a718d6e5e96006c420a5/logo_flag.png" type="image/x-icon">
+    <link rel="stylesheet" href="/themes/odin/static/css/fonts.min.css?d=99bdc1a9">
+    <link rel="stylesheet" href="/themes/odin/static/css/main.min.css?d=99bdc1a9">
+    <link rel="stylesheet" href="/themes/odin/static/css/core.min.css?d=99bdc1a9">
+    
+
+
+    
+    <script type="text/javascript">
+        var init = {
+            'urlRoot': "",
+            'csrfNonce': "fee877cf2a15e512b9c901a845041682688124f848cf5754d952280169a5a86f",
+            'userMode': "teams",
+            'userId': 0,
+            'start': 1700850660,
+            'end': 1700936940,
+            'theme_settings': null
+        }
+    </script>
+    
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <div class="container">
+        <a href="/" class="navbar-brand">
+            
+                unreal
+            
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#base-navbars"
+                aria-controls="base-navbars" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="base-navbars">
+            <ul class="navbar-nav mr-auto">
+
+                
+                    <li class="nav-item">
+                        <a class="nav-link" href="/users">Users</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="/teams">Teams</a>
+                    </li>
+                    
+                
+
+                
+                    <li class="nav-item">
+                        <a class="nav-link" href="/scoreboard">Scoreboard</a>
+                    </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/challenges">Challenges</a>
+                </li>
+            </ul>
+
+            <hr class="d-sm-flex d-md-flex d-lg-none">
+
+            <ul class="navbar-nav ml-md-auto d-block d-sm-flex d-md-flex">
+                
+                    
+                        <li class="nav-item">
+                            <a class="nav-link" href="/register">
+                                <span class="d-block" data-toggle="tooltip" data-placement="bottom" title="Register">
+                                    <i class="fas fa-user-plus d-none d-md-block d-lg-none"></i>
+                                </span>
+                                <span class="d-sm-block d-md-none d-lg-block">
+                                    <i class="fas fa-user-plus pr-1"></i>Register
+                                </span>
+                            </a>
+                        </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="/login">
+                            <span class="d-block" data-toggle="tooltip" data-placement="bottom" title="Login">
+                                <i class="fas fa-sign-in-alt d-none d-md-block d-lg-none"></i>
+                            </span>
+                            <span class="d-sm-block d-md-none d-lg-block">
+                                <i class="fas fa-sign-in-alt pr-1"></i>Login
+                            </span>
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+</nav>
+
+    <main role="main">
+        
+	<div class="jumbotron">
+		<div class="container">
+			<h1 id="team-id" team-id="15">OPG World School</h1>
+			
+			
+			
+			
+			<h2 id="team-place" class="text-center">
+				
+				
+				
+					
+						2nd
+						<small>place</small>
+					
+				
+			</h2>
+			<h2 id="team-score" class="text-center">
+				
+					5100
+					<small>points</small>
+				
+			</h2>
+
+			<div class="pt-3">
+				
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div>
+
+
+</div>
+
+		<br>
+
+		<div class="row">
+			<div class="col-md-12">
+				<h3>Members</h3>
+				<table class="table table-striped">
+					<thead>
+					<tr>
+						<td><b>User Name</b></td>
+						<td><b>Score</b></td>
+					</tr>
+					</thead>
+					<tbody>
+					
+						<tr>
+							<td>
+								<a href="/users/27">
+									deva
+								</a>
+							</td>
+							<td>5100</td>
+						</tr>
+					
+					</tbody>
+				</table>
+			</div>
+		</div>
+
+		
+			<div class="row">
+				<div class="col-md-6 d-none d-md-block d-lg-block">
+					<div id="keys-pie-graph" class="d-flex align-items-center">
+						<div class="text-center w-100">
+							<i class="fas fa-circle-notch fa-spin fa-3x fa-fw spinner"></i>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 d-none d-md-block d-lg-block">
+					<div id="categories-pie-graph" class="d-flex align-items-center">
+						<div class="text-center w-100">
+							<i class="fas fa-circle-notch fa-spin fa-3x fa-fw spinner"></i>
+						</div>
+					</div>
+				</div>
+				<br class="clearfix">
+				<div class="col-md-12 d-none d-md-block d-lg-block">
+					<div id="score-graph" class="w-100 d-flex align-items-center">
+						<div class="text-center w-100">
+							<i class="fas fa-circle-notch fa-spin fa-3x fa-fw spinner"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="clearfix"></div>
+
+			
+
+			<div class="row">
+				<div class="col-md-12">
+					<h3>Solves</h3>
+					<table class="table table-striped">
+						<thead>
+						<tr>
+							<td><b>Challenge</b></td>
+							<td class="d-none d-md-block d-lg-block"><b>Category</b></td>
+							<td><b>Value</b></td>
+							<td><b>Time</b></td>
+						</tr>
+						</thead>
+						<tbody>
+						
+							<tr>
+								<td>
+									<a href="/challenges#binary-2">
+										binary
+									</a>
+								</td>
+								<td class="d-none d-md-block d-lg-block">warmup</td>
+								<td>50</td>
+								<td class="solve-time">
+									<span data-time="2023-11-24T18:38:25Z"></span>
+								</td>
+							</tr>
+						
+							<tr>
+								<td>
+									<a href="/challenges#sanity check-4">
+										sanity check
+									</a>
+								</td>
+								<td class="d-none d-md-block d-lg-block">warmup</td>
+								<td>50</td>
+								<td class="solve-time">
+									<span data-time="2023-11-24T18:38:40Z"></span>
+								</td>
+							</tr>
+						
+							<tr>
+								<td>
+									<a href="/challenges#ezpwn-8">
+										ezpwn
+									</a>
+								</td>
+								<td class="d-none d-md-block d-lg-block">warmup</td>
+								<td>50</td>
+								<td class="solve-time">
+									<span data-time="2023-11-24T18:46:20Z"></span>
+								</td>
+							</tr>
+						
+							<tr>
+								<td>
+									<a href="/challenges#nc-6">
+										nc
+									</a>
+								</td>
+								<td class="d-none d-md-block d-lg-block">warmup</td>
+								<td>50</td>
+								<td class="solve-time">
+									<span data-time="2023-11-24T18:49:00Z"></span>
+								</td>
+							</tr>
+						
+							<tr>
+								<td>
+									<a href="/challenges#web-starter-7">
+										web-starter
+									</a>
+								</td>
+								<td class="d-none d-md-block d-lg-block">warmup</td>
+								<td>50</td>
+								<td class="solve-time">
+									<span data-time="2023-11-24T18:51:50Z"></span>
+								</td>
+							</tr>
+						
+							<tr>
+								<td>
+									<a href="/challenges#my honest reaction-13">
+										my honest reaction
+									</a>
+								</td>
+								<td class="d-none d-md-block d-lg-block">rev</td>
+								<td>150</td>
+								<td class="solve-time">
+									<span data-time="2023-11-24T18:55:40Z"></span>
+								</td>
+							</tr>
+						
+							<tr>
+								<td>
+									<a href="/challenges#args-18">
+										args
+									</a>
+								</td>
+								<td class="d-none d-md-block d-lg-block">pwn</td>
+								<td>300</td>
+								<td class="solve-time">
+									<span data-time="2023-11-24T20:16:24Z"></span>
+								</td>
+							</tr>
+						
+							<tr>
+								<td>
+									<a href="/challenges#goof-17">
+										goof
+									</a>
+								</td>
+								<td class="d-none d-md-block d-lg-block">pwn</td>
+								<td>200</td>
+								<td class="solve-time">
+									<span data-time="2023-11-24T20:26:41Z"></span>
+								</td>
+							</tr>
+						
+							<tr>
+								<td>
+									<a href="/challenges#bot-3">
+										bot
+									</a>
+								</td>
+								<td class="d-none d-md-block d-lg-block">warmup</td>
+								<td>50</td>
+								<td class="solve-time">
+									<span data-time="2023-11-24T20:39:25Z"></span>
+								</td>
+							</tr>
+						
+							<tr>
+								<td>
+									<a href="/challenges#zq5-5">
+										zq5
+									</a>
+								</td>
+								<td class="d-none d-md-block d-lg-block">warmup</td>
+								<td>50</td>
+								<td class="solve-time">
+									<span data-time="2023-11-24T20:43:06Z"></span>
+								</td>
+							</tr>
+						
+							<tr>
+								<td>
+									<a href="/challenges#base-ic-14">
+										base-ic
+									</a>
+								</td>
+								<td class="d-none d-md-block d-lg-block">misc</td>
+								<td>100</td>
+								<td class="solve-time">
+									<span data-time="2023-11-24T21:08:57Z"></span>
+								</td>
+							</tr>
+						
+							<tr>
+								<td>
+									<a href="/challenges#file-server-21">
+										file-server
+									</a>
+								</td>
+								<td class="d-none d-md-block d-lg-block">web</td>
+								<td>300</td>
+								<td class="solve-time">
+									<span data-time="2023-11-24T21:38:09Z"></span>
+								</td>
+							</tr>
+						
+							<tr>
+								<td>
+									<a href="/challenges#lobmi-22">
+										lobmi
+									</a>
+								</td>
+								<td class="d-none d-md-block d-lg-block">forensics</td>
+								<td>200</td>
+								<td class="solve-time">
+									<span data-time="2023-11-24T21:46:16Z"></span>
+								</td>
+							</tr>
+						
+							<tr>
+								<td>
+									<a href="/challenges#aes-9">
+										aes
+									</a>
+								</td>
+								<td class="d-none d-md-block d-lg-block">crypto</td>
+								<td>150</td>
+								<td class="solve-time">
+									<span data-time="2023-11-25T03:19:17Z"></span>
+								</td>
+							</tr>
+						
+							<tr>
+								<td>
+									<a href="/challenges#rsa-10">
+										rsa
+									</a>
+								</td>
+								<td class="d-none d-md-block d-lg-block">crypto</td>
+								<td>150</td>
+								<td class="solve-time">
+									<span data-time="2023-11-25T03:43:44Z"></span>
+								</td>
+							</tr>
+						
+							<tr>
+								<td>
+									<a href="/challenges#what&#39;s UP, X!-12">
+										what&#39;s UP, X!
+									</a>
+								</td>
+								<td class="d-none d-md-block d-lg-block">rev</td>
+								<td>200</td>
+								<td class="solve-time">
+									<span data-time="2023-11-25T05:07:52Z"></span>
+								</td>
+							</tr>
+						
+							<tr>
+								<td>
+									<a href="/challenges#sst_-23">
+										sst_
+									</a>
+								</td>
+								<td class="d-none d-md-block d-lg-block">forensics</td>
+								<td>250</td>
+								<td class="solve-time">
+									<span data-time="2023-11-25T07:11:02Z"></span>
+								</td>
+							</tr>
+						
+							<tr>
+								<td>
+									<a href="/challenges#shop-26">
+										shop
+									</a>
+								</td>
+								<td class="d-none d-md-block d-lg-block">pwn</td>
+								<td>400</td>
+								<td class="solve-time">
+									<span data-time="2023-11-25T11:13:22Z"></span>
+								</td>
+							</tr>
+						
+							<tr>
+								<td>
+									<a href="/challenges#sailing the high seas-25">
+										sailing the high seas
+									</a>
+								</td>
+								<td class="d-none d-md-block d-lg-block">rev</td>
+								<td>250</td>
+								<td class="solve-time">
+									<span data-time="2023-11-25T11:46:15Z"></span>
+								</td>
+							</tr>
+						
+							<tr>
+								<td>
+									<a href="/challenges#Level 1-19">
+										Level 1
+									</a>
+								</td>
+								<td class="d-none d-md-block d-lg-block">crypting</td>
+								<td>250</td>
+								<td class="solve-time">
+									<span data-time="2023-11-25T13:19:15Z"></span>
+								</td>
+							</tr>
+						
+							<tr>
+								<td>
+									<a href="/challenges#Level 2-20">
+										Level 2
+									</a>
+								</td>
+								<td class="d-none d-md-block d-lg-block">crypting</td>
+								<td>250</td>
+								<td class="solve-time">
+									<span data-time="2023-11-25T14:28:58Z"></span>
+								</td>
+							</tr>
+						
+							<tr>
+								<td>
+									<a href="/challenges#go rev-24">
+										go rev
+									</a>
+								</td>
+								<td class="d-none d-md-block d-lg-block">rev</td>
+								<td>400</td>
+								<td class="solve-time">
+									<span data-time="2023-11-25T15:50:41Z"></span>
+								</td>
+							</tr>
+						
+							<tr>
+								<td>
+									<a href="/challenges#Level 3-27">
+										Level 3
+									</a>
+								</td>
+								<td class="d-none d-md-block d-lg-block">crypting</td>
+								<td>250</td>
+								<td class="solve-time">
+									<span data-time="2023-11-25T16:12:57Z"></span>
+								</td>
+							</tr>
+						
+							<tr>
+								<td>
+									<a href="/challenges#spam-33">
+										spam
+									</a>
+								</td>
+								<td class="d-none d-md-block d-lg-block">pwn</td>
+								<td>200</td>
+								<td class="solve-time">
+									<span data-time="2023-11-25T17:10:30Z"></span>
+								</td>
+							</tr>
+						
+							<tr>
+								<td>
+									<a href="/challenges#secweb-32">
+										secweb
+									</a>
+								</td>
+								<td class="d-none d-md-block d-lg-block">web</td>
+								<td>250</td>
+								<td class="solve-time">
+									<span data-time="2023-11-25T17:51:41Z"></span>
+								</td>
+							</tr>
+						
+							<tr>
+								<td>
+									<a href="/challenges#Level 4-29">
+										Level 4
+									</a>
+								</td>
+								<td class="d-none d-md-block d-lg-block">crypting</td>
+								<td>250</td>
+								<td class="solve-time">
+									<span data-time="2023-11-25T18:01:36Z"></span>
+								</td>
+							</tr>
+						
+							<tr>
+								<td>
+									<a href="/challenges#Level 5-30">
+										Level 5
+									</a>
+								</td>
+								<td class="d-none d-md-block d-lg-block">crypting</td>
+								<td>250</td>
+								<td class="solve-time">
+									<span data-time="2023-11-25T18:22:58Z"></span>
+								</td>
+							</tr>
+						
+						</tbody>
+					</table>
+				</div>
+			</div>
+		
+	</div>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container text-center">
+            <a href="https://ctfd.io" class="text-secondary">
+                <small class="text-muted">Powered by CTFd</small>
+            </a>
+        </div>
+    </footer>
+
+    <script defer src="/themes/odin/static/js/vendor.bundle.min.js?d=99bdc1a9"></script>
+    <script defer src="/themes/odin/static/js/core.min.js?d=99bdc1a9"></script>
+    <script defer src="/themes/odin/static/js/helpers.min.js?d=99bdc1a9"></script>
+
+    
+	
+		<script defer src="/themes/odin/static/js/pages/stats.min.js?d=99bdc1a9"></script>
+	
+
+
+    
+	<script>
+		var stats_data = {"account_id": 15, "id": 15, "name": "OPG World School", "type": "team"};
+	</script>
+	<script defer src="/themes/odin/static/js/echarts.bundle.min.js?d=99bdc1a9"></script>
+	<script defer src="/themes/odin/static/js/graphs.min.js?d=99bdc1a9"></script>
+
+
+    
+
+    
+</body>
+</html>
